@@ -1,0 +1,7 @@
+---
+
+- name: Remove IIS subsystem
+  hosts: all
+  roles:
+    - role: remove-iis
+

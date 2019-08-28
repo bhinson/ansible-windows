@@ -1,0 +1,6 @@
+---
+
+- name: Install IIS feature
+  win_feature:
+    name: Web-Server
+    state: present

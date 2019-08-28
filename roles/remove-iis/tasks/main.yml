@@ -1,0 +1,6 @@
+---
+
+- name: Uninstall IIS feature
+  win_feature:
+    name: Web-Server
+    state: absent

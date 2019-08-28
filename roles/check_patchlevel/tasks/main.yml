@@ -1,0 +1,11 @@
+---
+
+- name: Check for missing updates
+  win_updates:
+    state: searched
+  register: update_count
+
+- name: Show pending updates
+  debug:
+    msg: There are {{ update_count.found_update_count }} updates to apply.
+    verbosity: 0

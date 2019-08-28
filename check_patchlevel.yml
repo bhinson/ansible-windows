@@ -1,0 +1,7 @@
+---
+
+- name: Verify Windows hosts
+  hosts: all
+  roles:
+    - role: check_patchlevel
+

@@ -1,0 +1,7 @@
+---
+
+- name: Install IIS subsystem
+  hosts: all
+  roles:
+    - role: install-iis
+
