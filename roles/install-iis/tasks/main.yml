@@ -2,5 +2,7 @@
 
 - name: Install IIS feature
   win_feature:
-    name: Web-Server
+    name:
+      - Web-Server
+      - Web-Common-Http
     state: present
