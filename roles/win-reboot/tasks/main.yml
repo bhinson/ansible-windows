@@ -1,0 +1,5 @@
+---
+
+- name: Reboot system
+  win_reboot:
+    reboot_timeout: 1200

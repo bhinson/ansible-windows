@@ -1,0 +1,7 @@
+---
+
+- name: Reboot Windows system
+  hosts: all
+  roles:
+    - role: win-reboot
+
