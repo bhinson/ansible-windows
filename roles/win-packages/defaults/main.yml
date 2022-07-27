@@ -1,0 +1,4 @@
+---
+# Change state to "present" to install,
+# or "absent" to uninstall
+state: present

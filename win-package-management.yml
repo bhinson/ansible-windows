@@ -1,0 +1,7 @@
+---
+
+- name: Test Windows package management
+  hosts: all
+  roles:
+    - role: win-packages
+

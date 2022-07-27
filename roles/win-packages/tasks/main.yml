@@ -1,0 +1,13 @@
+---
+# Install Windows package
+- name: Deploy MSI installer
+  copy:
+    src: 7z1900-x64.msi
+    dest: C:\Users\bhinson\Downloads
+
+- name: Configure 7-zip
+  win_package:
+    path: C:\Users\bhinson\Downloads\7z1900-x64.msi
+#    product_id: '{23170F69-40C1-2702-1900-000001000000}'
+    state: "{{ state }}"
+  tags: 7-zip
